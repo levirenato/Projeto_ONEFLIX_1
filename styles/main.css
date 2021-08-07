@@ -1,0 +1,86 @@
+:root{
+    --Azul:#47b1d4;
+    --Branco:#e2e0dc;
+    --Amarelo:#f1bd37;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background: var(--Branco);
+  font-family: 'Times New Roman', Times, serif;
+  color:white;
+  margin: 1px;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    margin-left: 5px;
+    color: var(--Azul);
+    font-family: "Arial Black",Times;
+    font-size: 40px;
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+   color:var(--Amarelo);
+}
+main .descricao{
+    color: whitesmoke;
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: bold;
+    
+}
+/*CAPA*/
+.capa-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.65)100%), url("../img/capa.jpg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.capa-principal .descricao{
+    margin-top: 10px;
+    margin-bottom:40px ;
+}
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(197, 216, 216, 0.7);
+    border: none;
+    color:black ;
+    font-weight: bolder;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+.botao:hover{
+    background-color: black;
+    color:white;
+}
+.botao i{
+    margin-right: 8px;
+}
